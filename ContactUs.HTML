@@ -16,7 +16,7 @@ display: inline-block;
 header{
 background-color: #c9dae9;
 width:100%;
-height:100px;
+height:150px;
 align: left;
 }
 
@@ -34,6 +34,15 @@ font-size: 20px;
 nav a{color:#c3fdff;text-transform:uppercase;font-size:20px;text-decoration:none}
 
 nav a:hover{color:#01579b}
+
+nav a::before{content:" ";display:block;top:50px;width:0%;
+    height:3px;background-color:blue;transition:ease-in-out 500ms;}
+    nav a:hover::before{width:100%;}
+
+.city-sites ul li {
+list-style: none;
+}
+
 
 .wrapper .inputfield {
 margin-bottom: 10px;
